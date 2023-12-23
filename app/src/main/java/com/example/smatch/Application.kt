@@ -1,22 +1,22 @@
 package com.example.smatch
 
 import android.app.Application
-import com.example.smatch.util.KeyboardUtil
-import com.example.smatch.util.PopUpUtil
-import com.example.smatch.util.PreferenceUtil
+import com.example.smatch.util.Keyboard
+import com.example.smatch.util.PopUp
+import com.example.smatch.util.Preference
 
 class Application : Application() {
     companion object {
-        lateinit var kbUtil : KeyboardUtil
-        lateinit var popupUtil : PopUpUtil
-        lateinit var prefUtil: PreferenceUtil
+        lateinit var keyboard: Keyboard
+        lateinit var popup: PopUp
+        lateinit var pref: Preference
     }
 
     override fun onCreate() {
         super.onCreate()
 
-        kbUtil = KeyboardUtil()
-        popupUtil = PopUpUtil(applicationContext)
-        prefUtil = PreferenceUtil(applicationContext)
+        keyboard = Keyboard()
+        popup = PopUp(applicationContext)
+        pref = Preference(applicationContext)
     }
 }

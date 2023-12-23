@@ -5,7 +5,7 @@ import android.view.View
 import android.widget.Toast
 import com.google.android.material.snackbar.Snackbar
 
-class PopUpUtil(private val context: Context) {
+class PopUp(private val context: Context) {
     fun toast(s: String) {
         Toast.makeText(
             context, s, Toast.LENGTH_SHORT

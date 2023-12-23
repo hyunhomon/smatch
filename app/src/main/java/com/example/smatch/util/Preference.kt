@@ -2,7 +2,7 @@ package com.example.smatch.util
 
 import android.content.Context
 
-class PreferenceUtil(context: Context) {
+class Preference(context: Context) {
     private val prefs = context.getSharedPreferences("pref", Context.MODE_PRIVATE)
 
     fun getBoolean(key: String, defValue: Boolean): Boolean {
